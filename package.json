@@ -1,6 +1,6 @@
 {
   "name": "@stmol/dsh-prompt-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publishConfig": {
     "access": "public"
   },
@@ -18,9 +18,12 @@
   },
   "keywords": [
     "dsh",
+    "dsh-plugin",
     "deepseek-harness",
+    "deepseek-harness-plugin",
     "plugin",
-    "prompts"
+    "prompts",
+    "prompt-library"
   ],
   "files": [
     "client.js",
