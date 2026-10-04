@@ -7,6 +7,14 @@
 
 A prompt that is ticked applies to every model step of that session, and to the subagents it starts.
 
+<p align="center">
+  <img src="docs/ui-composer.webp" width="620" alt="Prompts picker open in the chat composer, one prompt ticked and one available"><br>
+</p>
+
+<p align="center">
+  <img src="docs/ui-settings.webp" width="430" alt="Settings → Prompts page with a prompt editor open and a saved prompt below"><br>
+</p>
+
 ## Install
 
 Published on npm as [`@stmol/dsh-prompt-lib`](https://www.npmjs.com/package/@stmol/dsh-prompt-lib).
