@@ -1,0 +1,14 @@
+# Profile patch for the prompt-library bundle.
+#
+# The entry id is load-bearing: it is the settings namespace the client half
+# reads and writes through `ctx.remote.settings` (the Settings -> Prompts page
+# and the composer picker both address `prompt-lib`). Renaming the id means
+# updating ENTRY_ID in client.js.
+- insert:
+    - id: prompt-lib
+      name: '@stmol/dsh-prompt-lib'
+      config:
+        # The stored prompt library: [{ id, title, text, byDefault }].
+        prompts: []
+        # Per-session pick: { [sessionId]: [promptId, ...] }.
+        selection: {}

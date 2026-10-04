@@ -1,0 +1,7 @@
+node_modules/
+*.log
+.DS_Store
+
+# Local research area: not part of the repository. Holds extracted app sources,
+# scratch dumps and the standalone preview helper.
+.tools/

@@ -1,0 +1,54 @@
+{
+  "name": "@stmol/dsh-prompt-lib",
+  "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "description": "User-defined prompt library for DeepSeek Harness: a Prompts page in Settings and a composer picker that injects the chosen prompts into a session and its subagents",
+  "license": "MIT",
+  "author": "Stmol",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stmol/dsh-prompt-lib.git"
+  },
+  "homepage": "https://github.com/Stmol/dsh-prompt-lib#readme",
+  "bugs": {
+    "url": "https://github.com/Stmol/dsh-prompt-lib/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "prompts"
+  ],
+  "files": [
+    "client.js",
+    "cordis.patch.yml",
+    "index.js"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "3.18.4"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-api-remotes"
+      ]
+    }
+  }
+}
